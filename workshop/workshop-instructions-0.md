@@ -33,3 +33,7 @@ npm run start
 ### References
 
 - [React Docs: Create-React-App](https://reactjs.org/docs/create-a-new-react-app.html)
+
+### Next Step
+
+- [Step 2: Setting up GitHub Actions for CI/CD](workshop-instructions-1.md)

@@ -22,3 +22,7 @@
 - [GitHub Docs: .gitignore](https://docs.github.com/en/github/using-git/ignoring-files)
 - [Open Source Licenses Guide](https://opensource.org/licenses)
 - [Markdown Guide](https://www.markdownguide.org/)
+
+### Getting Started
+
+- [Step1: Pre-Requisites](workshop/workshop-instructions-0.md)

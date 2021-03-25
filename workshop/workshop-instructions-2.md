@@ -23,3 +23,7 @@ ADD . .
 RUN mvn clean install
 RUN java /src/main/java/github/App.java
 ```
+
+### Next Step
+
+- [Step 4: Setting up GitHub Actions for Pushing Docker Images to GitHub Packages](workshop-instructions-3.md)

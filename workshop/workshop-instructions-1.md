@@ -44,3 +44,7 @@ jobs:
         cd backend/
         mvn clean install
 ```
+
+### Next Step
+
+- [Step 3: Writing Dockerfiles for setting up GitHub Packages](workshop-instructions-2.md)
