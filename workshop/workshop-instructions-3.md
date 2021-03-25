@@ -21,7 +21,7 @@ jobs:
 
 ### GitHub Actions to Push Docker Images
 
-```
+```yml
 name: Docker Build for React
 on:
   push
