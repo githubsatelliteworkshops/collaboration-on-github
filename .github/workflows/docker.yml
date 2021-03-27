@@ -1,8 +1,8 @@
-name: Docker Build for React
+name: Docker Build for Apache Maven
 on:
   push
 env:
-  IMAGE_NAME: react
+  IMAGE_NAME: maven
   
 jobs:
   dockerize:
@@ -16,11 +16,11 @@ jobs:
           docker build -t maven .
       
       - name: Log into registry
-        run: echo "${{ secrets.GH_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.GH_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Push image
         run: |
-          IMAGE_ID=ghcr.io/${{ github.repository }}/$IMAGE_NAME
+          IMAGE_ID=docker.pkg.github.com/${{ github.repository }}/$IMAGE_NAME
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
           docker tag $IMAGE_NAME $IMAGE_ID
           docker push $IMAGE_ID
