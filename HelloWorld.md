@@ -1,4 +1,5 @@
-# Divergence 1
+
+# No conflicts at all
 
 ## Header 2
 
